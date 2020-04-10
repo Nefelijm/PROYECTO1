@@ -8,13 +8,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
+import { OrdenComponent } from './components/orden/orden.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
-    ContenidoComponent
+    ContenidoComponent,
+    OrdenComponent
   
   ],
   imports: [
