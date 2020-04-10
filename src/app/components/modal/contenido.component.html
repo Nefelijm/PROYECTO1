@@ -1,0 +1,540 @@
+<div mat-dialog-title class="title-background">
+    <button mat-button (click)="onNoClick()">X</button>
+    <h1 class="title">Vegetarian Special Pizza</h1>
+</div>
+
+<div mat-dialog-content>
+    <div class="content-title">
+        <p class="content-title-category">Size</p>
+        <h3 class="content-title-description">Please select one item below</h3>
+    </div>
+    <div class="content-options-padding">
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="1">Small(8″)</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="2">Medium(10″)</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="3">Large(12″)</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="content-title">
+        <p class="content-title-category">Cheese</p>
+        <h3 class="content-title-description">Please select one item below</h3>
+    </div>
+    <div class="content-options-padding">
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="1">Mozzarella</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="2">Cheddar</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="3">American</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="3">Feta</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-radio-button value="3">Pepperjack</mat-radio-button>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="content-title">
+        <p class="content-title-category">Sauce</p>
+        <h3 class="content-title-description">Please select least 1 item below (Max:2)</h3>
+    </div>
+    <div class="content-options-padding">
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Marinara</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Cheesy</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Garlic</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>No Sauce</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="content-title">
+        <p class="content-title-category">Ingredients</p>
+        <h3 class="content-title-description">Please review items included in your order</h3>
+    </div>
+    <div class="content-options-padding">
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Onions</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Tomato</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Buffalo Chicken</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Kale</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Olive Oil</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Parmesan Cheese</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="content-title">
+        <p class="content-title-category">Add Ons</p>
+        <h3 class="content-title-description">Please review items included in your item</h3>
+        <mat-divider class="content-title-line"></mat-divider> cheese <mat-divider class="content-title-line">
+        </mat-divider>
+    </div>
+    <div class="content-options-padding">
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Onions</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Tomato</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Buffalo Chicken</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Kale</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Olive Oil</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+        <div class="content-options">
+            <div>
+                <mat-checkbox>Parmesan Cheese</mat-checkbox>
+            </div>
+            <div>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="mostrar">
+        <div class="content-title">
+            <mat-divider class="content-title-line"></mat-divider> Sauce <mat-divider class="content-title-line">
+            </mat-divider>
+        </div>
+        <div class="content-options-padding">
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Marinara</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Cheesy</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Garlic</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>No Sauce</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-title">
+            <mat-divider class="content-title-line"></mat-divider> Vegetables <mat-divider class="content-title-line">
+            </mat-divider>
+        </div>
+        <div class="content-options-padding">
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Onions</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Tomato</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Garlic</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Kale</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Mixed Peppers</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Black Olives</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-title">
+            <mat-divider class="content-title-line"></mat-divider> Protein <mat-divider class="content-title-line">
+            </mat-divider>
+        </div>
+        <div class="content-options-padding">
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Roasted Chicken</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Pepperoni</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Bufalo Chicken</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Pulled pork</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Salani</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Salmon</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-title">
+            <mat-divider class="content-title-line"></mat-divider> Toppings <mat-divider class="content-title-line">
+            </mat-divider>
+        </div>
+        <div class="content-options-padding">
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Olive Oil</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Parmesan Cheese</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Chilli Flakes</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Dried Oregano Herbs</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-title">
+            <mat-divider class="content-title-line"></mat-divider> Sides <mat-divider class="content-title-line">
+            </mat-divider>
+        </div>
+        <div class="content-options-padding">
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Fries</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Onion Rings</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Ceasar Salad</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Fried Chicken</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Garlic Bread
+                    </mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="content-options">
+                <div>
+                    <mat-checkbox>Cheesy Garlic Bread</mat-checkbox>
+                </div>
+                <div>
+                    <p>$0.00</p>
+                </div>
+            </div>
+        </div>
+
+
+   </div>
+    <div class="content-options-button-container">
+        <button (click)="show()" class="content-options-button">{{palabra}}</button>
+    </div>
+   
+ 
+
+
+    <mat-divider></mat-divider>
+    <div class="content-options-padding">
+        <p>Notes:</p>
+        <textarea name="" id="" style="min-width: 100%" rows="5" placeholder="e.g. allergies, extra spicy, etc"></textarea>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="content-options-padding">
+        <div class="content-options-optional">
+            <p>People also added:</p>
+            <p>(Optional)</p>
+        </div>
+        <div>
+            <div class="content-options-people">
+                <div>
+                    <mat-checkbox>Ranch Dressing</mat-checkbox>
+                </div>
+                <div>
+                    <p>+$6</p>
+                </div>
+            </div>
+            <div class="content-options-people">
+                <div>
+                    <mat-checkbox>Chips</mat-checkbox>
+                </div>
+                <div>
+                    <p>+$8</p>
+                </div>
+            </div>
+            <div class="content-options-people">
+                <div>
+                    <mat-checkbox>Churros</mat-checkbox>
+                </div>
+                <div>
+                    <p>+$8</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-options-accountant">
+
+        <div class="accountant-button-border">
+            <span class="symbol">-</span> <span class="number">2</span> <span class="symbol">+</span>
+        </div>
+
+    </div>
+    <div class="accountant-result">
+        <p>$60.35</p>
+    </div>
+    <div class="content-options-button-contain">
+        <button class="content-options-button-cart">ADD TO CART</button>
+    </div>
+
+  
+
+</div>
