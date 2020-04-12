@@ -1,4 +1,4 @@
-
+/*_______________________Modal______________________*/
 
 /* Ampliando el modal*/
 
@@ -8,17 +8,35 @@
 
 .mat-dialog-container {
     padding: 0px !important;
+    position: absolute;
 }
 
 .mat-dialog-content {
     margin: 0px !important;
     padding: 0px 10px 0px 10px !important;
+    border-radius: 15px 20px 15px 0px;
+    box-shadow: 0 2px 7px 0 rgba(118, 115, 115, 0.15);
+    position: absolute;
+    top: 14%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
+    height: 100%;
+    max-height: 100vh !important;
+}
+
+.mat-dialog-title {
+    margin: 0 0 0px !important;
+    z-index: 1;
+    position: absolute;
 }
 
 .mat-button {
-    color: white;
-    margin-left: 80% !important;
-    font-size: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 56px
 }
 
 .mat-radio-button {
@@ -26,10 +44,10 @@
     padding: 10px 0px;
 }
 
-.divider{
-  border: 1px solid #D7CDCD !important;
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
+.divider {
+    border: 1px solid #D7CDCD !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 .title-background {
@@ -41,6 +59,8 @@
     position: relative;
     color: white;
     z-index: 1;
+    height: 10%;
+    text-align: center;
 }
 
 .title-background::after {
@@ -55,53 +75,94 @@
 }
 
 .title {
-    text-align: center;
-    font-size: 35px;
-    font-family: Montserrat SemiBold;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    display: inline-block
+}
+
+.title-button {
+    float: right;
 }
 
 .content-title {
     text-align: center;
-    font-family: Montserrat SemiBold;
-    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 22px;
 }
 
 .content-title-category {
-    font-family: Montserrat Bold;
-    font-size: 30px;
+    font-family: 'Montserrat';
+    font-size: 20px;
     font-weight: bold;
-    letter-spacing: normal;
-    color: rgb(63, 69, 73);
+    letter-spacing: 0;
+    color: #47525D;
     margin: 30px 0 0 0 !important;
     line-height: 10px;
 }
 
 .content-title-description {
-    font-family: Montserrat SemiBold;
-    font-size: 15px;
-    line-height: 16px;
+    font-family: 'Montserrat';
+    color: #52565F;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 600;
 }
 
 .content-title-line {
-    width: 30%;
+    width: 36%;
     display: inline-block !important;
 }
 
+.content-title-span {
+    color: #52565F !important;
+    font-size: 16px !important;
+}
+
 .content-options {
-    font-family: Montserrat Medium;
+    font-family: 'Montserrat';
     font-size: 14px;
     text-align: right;
-    color: #343538;
-    font-weight: bold;
+    color: #464855;
+    font-weight: 600;
+    letter-spacing: 0;
     display: flex;
     justify-content: space-between;
 }
 
+.content-options-check {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: right;
+    padding: 10px 0px;
+    color: #464855;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-options-check p {
+    margin: 0px !important;
+}
+
+.content-options p {
+    margin: 0px !important;
+}
+
 .content-options-padding {
-    padding: 0 5%;
-    font-weight: bold;
-    font-size: 20px;
+    color: #000000;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.content-options-padding  textarea{
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    padding: 10px 0 0 5px;
 }
 
 .content-options-optional {
@@ -120,17 +181,20 @@
     background-color: #FFFFFF;
     border: 1px solid #000000;
     padding: 10px 0px;
-    font-size: 25px;
-    font-family: Montserrat Medium;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .content-options-people {
     display: flex;
     justify-content: space-between;
     background-color: #F4F4F4;
-    border-radius: 8px;
+    border-radius: 7px;
     margin-bottom: 10px;
     padding: 8px 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .content-options-people p {
@@ -150,41 +214,54 @@
     text-align: center;
     border: 1px solid #DF1683;
     border-radius: 10px;
-    width: 40%;
-    padding: 10px 0px;
+    padding: 7px 0px;
     margin-top: 20px;
+    font-family: 'Montserrat';
 }
 
 .symbol {
     color: #DF1683;
-    font-size: 30px;
+    font-size: 25px;
     padding: 0px 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .number {
     color: black;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .accountant-result {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Montserrat';
     font-weight: bold;
 }
 
 .content-options-button-cart {
     width: 90%;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #FFFFFF;
     border: 1px solid #DF1683;
     padding: 10px 0px;
     color: #DF1683;
     margin: 10px 0px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat';
 }
+
+.order-small-1 {
+    color: #DF1683;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+}
+
 
 /*_______________________orden______________________    */
 
@@ -214,7 +291,7 @@
     font-weight: 600;
     letter-spacing: 0;
     line-height: 18px;
-    margin: 0px ;
+    margin: 0px;
 }
 
 .order-display span {
@@ -232,14 +309,15 @@
     line-height: 15px;
     color: #000000;
     font-weight: 600;
-    padding: 0px 0px 0px 20px ;
+    padding: 0px 0px 0px 20px;
 }
+
 .order-edit {
     color: #979797;
     font-weight: 600;
     font-size: 12px;
     margin-right: 13px;
-    padding: 0px 0px 0px 20px ;
+    padding: 0px 0px 0px 20px;
     font-family: 'Montserrat';
 }
 
@@ -247,7 +325,7 @@
     color: #E02020;
     font-weight: 600;
     font-size: 12px;
-    padding: 0px 0px 0px 20px ;
+    padding: 0px 0px 0px 20px;
     font-family: 'Montserrat';
 }
 
@@ -272,10 +350,11 @@
     padding: 14px;
 }
 
-.order-proceed p .span2{
+.order-proceed p .span2 {
     text-align: end;
 }
-.order-small{
+
+.order-small {
     color: #DF1683;
     font-weight: 600;
     font-family: 'Montserrat';
@@ -283,18 +362,13 @@
     letter-spacing: 0;
     line-height: 19px;
     text-align: center;
-    padding: 14px 0px 0px 0px; 
+    padding: 14px 0px 0px 0px;
 }
 
 .order-display .order-red {
     text-decoration: line-through;
     color: #E02020;
 }
-
-
-
-
-
 
 /* .order-display-subTotal {
     display: flex;
@@ -315,4 +389,3 @@
     font-weight: bold;
     margin-top: 0px;
 } */
-

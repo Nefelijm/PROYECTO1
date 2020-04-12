@@ -8,6 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { OrdenComponent } from './components/orden/orden.component';
 
 
@@ -26,7 +27,8 @@ import { OrdenComponent } from './components/orden/orden.component';
     MatButtonModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
   providers: [],
   entryComponents: [ContenidoComponent],

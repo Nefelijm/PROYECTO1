@@ -1,13 +1,18 @@
 <div mat-dialog-title class="title-background">
-    <button mat-button (click)="onNoClick()">X</button>
-    <h1 class="title">Vegetarian Special Pizza</h1>
+   
+    <h1 class="title">
+        Vegetarian Special Pizza
+    </h1>
+    <div class="title-button">
+        <button mat-button (click)="onNoClick()">X</button>
+    </div>
 </div>
 
 <div mat-dialog-content>
     <div class="content-title">
         <p class="content-title-category">Size</p>
         <h3 class="content-title-description">Please select one item below</h3>
-    </div>
+    </div> 
     <div class="content-options-padding">
         <div class="content-options">
             <div>
@@ -87,7 +92,7 @@
         <h3 class="content-title-description">Please select least 1 item below (Max:2)</h3>
     </div>
     <div class="content-options-padding">
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Marinara</mat-checkbox>
             </div>
@@ -95,7 +100,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Cheesy</mat-checkbox>
             </div>
@@ -103,7 +108,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Garlic</mat-checkbox>
             </div>
@@ -111,7 +116,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>No Sauce</mat-checkbox>
             </div>
@@ -126,7 +131,7 @@
         <h3 class="content-title-description">Please review items included in your order</h3>
     </div>
     <div class="content-options-padding">
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Onions</mat-checkbox>
             </div>
@@ -134,7 +139,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Tomato</mat-checkbox>
             </div>
@@ -142,7 +147,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Buffalo Chicken</mat-checkbox>
             </div>
@@ -150,7 +155,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Kale</mat-checkbox>
             </div>
@@ -158,7 +163,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Olive Oil</mat-checkbox>
             </div>
@@ -166,7 +171,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Parmesan Cheese</mat-checkbox>
             </div>
@@ -179,11 +184,11 @@
     <div class="content-title">
         <p class="content-title-category">Add Ons</p>
         <h3 class="content-title-description">Please review items included in your item</h3>
-        <mat-divider class="content-title-line"></mat-divider> cheese <mat-divider class="content-title-line">
+        <mat-divider class="content-title-line"></mat-divider> <span class="content-title-span"> cheese </span><mat-divider class="content-title-line">
         </mat-divider>
     </div>
     <div class="content-options-padding">
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Onions</mat-checkbox>
             </div>
@@ -191,7 +196,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Tomato</mat-checkbox>
             </div>
@@ -199,7 +204,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Buffalo Chicken</mat-checkbox>
             </div>
@@ -207,7 +212,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Kale</mat-checkbox>
             </div>
@@ -215,7 +220,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Olive Oil</mat-checkbox>
             </div>
@@ -223,7 +228,7 @@
                 <p>$0.00</p>
             </div>
         </div>
-        <div class="content-options">
+        <div class="content-options-check">
             <div>
                 <mat-checkbox>Parmesan Cheese</mat-checkbox>
             </div>
@@ -234,11 +239,11 @@
     </div>
     <div *ngIf="mostrar">
         <div class="content-title">
-            <mat-divider class="content-title-line"></mat-divider> Sauce <mat-divider class="content-title-line">
+            <mat-divider class="content-title-line"></mat-divider> <span class="content-title-span">Sauce</span> <mat-divider class="content-title-line">
             </mat-divider>
         </div>
         <div class="content-options-padding">
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Marinara</mat-checkbox>
                 </div>
@@ -246,7 +251,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Cheesy</mat-checkbox>
                 </div>
@@ -254,7 +259,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Garlic</mat-checkbox>
                 </div>
@@ -262,7 +267,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>No Sauce</mat-checkbox>
                 </div>
@@ -272,11 +277,11 @@
             </div>
         </div>
         <div class="content-title">
-            <mat-divider class="content-title-line"></mat-divider> Vegetables <mat-divider class="content-title-line">
+            <mat-divider class="content-title-line"></mat-divider> <span class="content-title-span">Vegetables</span>  <mat-divider class="content-title-line">
             </mat-divider>
         </div>
         <div class="content-options-padding">
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Onions</mat-checkbox>
                 </div>
@@ -284,7 +289,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Tomato</mat-checkbox>
                 </div>
@@ -292,7 +297,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Garlic</mat-checkbox>
                 </div>
@@ -300,7 +305,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Kale</mat-checkbox>
                 </div>
@@ -308,7 +313,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Mixed Peppers</mat-checkbox>
                 </div>
@@ -316,7 +321,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Black Olives</mat-checkbox>
                 </div>
@@ -326,11 +331,11 @@
             </div>
         </div>
         <div class="content-title">
-            <mat-divider class="content-title-line"></mat-divider> Protein <mat-divider class="content-title-line">
+            <mat-divider class="content-title-line"></mat-divider><span class="content-title-span"> Protein</span> <mat-divider class="content-title-line">
             </mat-divider>
         </div>
         <div class="content-options-padding">
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Roasted Chicken</mat-checkbox>
                 </div>
@@ -338,7 +343,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Pepperoni</mat-checkbox>
                 </div>
@@ -346,7 +351,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Bufalo Chicken</mat-checkbox>
                 </div>
@@ -354,7 +359,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Pulled pork</mat-checkbox>
                 </div>
@@ -362,7 +367,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Salani</mat-checkbox>
                 </div>
@@ -370,7 +375,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Salmon</mat-checkbox>
                 </div>
@@ -380,11 +385,11 @@
             </div>
         </div>
         <div class="content-title">
-            <mat-divider class="content-title-line"></mat-divider> Toppings <mat-divider class="content-title-line">
+            <mat-divider class="content-title-line"></mat-divider> <span class="content-title-span"> Toppings</span> <mat-divider class="content-title-line">
             </mat-divider>
         </div>
         <div class="content-options-padding">
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Olive Oil</mat-checkbox>
                 </div>
@@ -392,7 +397,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Parmesan Cheese</mat-checkbox>
                 </div>
@@ -400,7 +405,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Chilli Flakes</mat-checkbox>
                 </div>
@@ -408,7 +413,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Dried Oregano Herbs</mat-checkbox>
                 </div>
@@ -418,11 +423,11 @@
             </div>
         </div>
         <div class="content-title">
-            <mat-divider class="content-title-line"></mat-divider> Sides <mat-divider class="content-title-line">
+            <mat-divider class="content-title-line"></mat-divider> <span class="content-title-span">Sides</span>  <mat-divider class="content-title-line">
             </mat-divider>
         </div>
         <div class="content-options-padding">
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Fries</mat-checkbox>
                 </div>
@@ -430,7 +435,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Onion Rings</mat-checkbox>
                 </div>
@@ -438,7 +443,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Ceasar Salad</mat-checkbox>
                 </div>
@@ -446,7 +451,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Fried Chicken</mat-checkbox>
                 </div>
@@ -454,7 +459,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Garlic Bread
                     </mat-checkbox>
@@ -463,7 +468,7 @@
                     <p>$0.00</p>
                 </div>
             </div>
-            <div class="content-options">
+            <div class="content-options-check">
                 <div>
                     <mat-checkbox>Cheesy Garlic Bread</mat-checkbox>
                 </div>
@@ -475,6 +480,7 @@
 
 
    </div>
+
     <div class="content-options-button-container">
         <button (click)="show()" class="content-options-button">{{palabra}}</button>
     </div>
@@ -482,10 +488,9 @@
  
 
 
-    <mat-divider></mat-divider>
     <div class="content-options-padding">
-        <p>Notes:</p>
-        <textarea name="" id="" style="min-width: 100%" rows="5" placeholder="e.g. allergies, extra spicy, etc"></textarea>
+        <p>Notes :</p>
+        <textarea name="" id="" style="min-width: 100%" rows="4" placeholder="e.g. allergies, extra spicy, etc"></textarea>
     </div>
     <mat-divider></mat-divider>
     <div class="content-options-padding">
@@ -532,9 +537,12 @@
         <p>$60.35</p>
     </div>
     <div class="content-options-button-contain">
-        <button class="content-options-button-cart">ADD TO CART</button>
+        <button class="content-options-button-cart">Add To Cart</button>
+    </div>
+    <div class="order-small-1">
+        <small>powered by eatOS</small>
     </div>
 
   
 
-</div>
+</div> 
